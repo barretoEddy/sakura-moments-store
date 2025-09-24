@@ -47,6 +47,30 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        // Japanese cultural design tokens
+        salmon: {
+          DEFAULT: "hsl(var(--salmon))",
+          light: "hsl(var(--salmon-light))",
+          dark: "hsl(var(--salmon-dark))",
+        },
+        zen: {
+          gold: "hsl(var(--zen-gold))",
+          "gold-light": "hsl(var(--zen-gold-light))",
+        },
+        bamboo: {
+          DEFAULT: "hsl(var(--bamboo))",
+          light: "hsl(var(--bamboo-light))",
+        },
+        night: {
+          DEFAULT: "hsl(var(--night))",
+          light: "hsl(var(--night-light))",
+          medium: "hsl(var(--night-medium))",
+        },
+        pearl: {
+          DEFAULT: "hsl(var(--pearl))",
+          muted: "hsl(var(--pearl-muted))",
+          soft: "hsl(var(--pearl-soft))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",

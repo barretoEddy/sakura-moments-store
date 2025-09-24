@@ -2,39 +2,70 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Japanese-inspired modern design system with elegant dark theme and salmon accents */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 220 13% 9%;
+    --foreground: 60 9% 98%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 220 13% 11%;
+    --card-foreground: 60 9% 98%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 220 13% 11%;
+    --popover-foreground: 60 9% 98%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 15 86% 65%;
+    --primary-foreground: 220 13% 9%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 220 13% 15%;
+    --secondary-foreground: 60 9% 98%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 220 13% 15%;
+    --muted-foreground: 220 9% 55%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 45 93% 47%;
+    --accent-foreground: 220 13% 9%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 220 13% 20%;
+    --input: 220 13% 15%;
+    --ring: 15 86% 65%;
+
+    /* Japanese cultural design tokens */
+    --salmon: 15 86% 65%;
+    --salmon-light: 15 86% 75%;
+    --salmon-dark: 15 86% 55%;
+    
+    --zen-gold: 45 93% 47%;
+    --zen-gold-light: 45 93% 57%;
+    
+    --bamboo: 150 30% 40%;
+    --bamboo-light: 150 30% 50%;
+    
+    --night: 220 13% 9%;
+    --night-light: 220 13% 11%;
+    --night-medium: 220 13% 15%;
+    
+    --pearl: 60 9% 98%;
+    --pearl-muted: 220 9% 85%;
+    --pearl-soft: 220 9% 55%;
+
+    /* Gradients for cultural experience */
+    --gradient-salmon: linear-gradient(135deg, hsl(var(--salmon)), hsl(var(--salmon-light)));
+    --gradient-zen: linear-gradient(135deg, hsl(var(--night)), hsl(var(--night-medium)));
+    --gradient-cultural: linear-gradient(180deg, hsl(var(--night)) 0%, hsl(var(--night-light)) 100%);
+
+    /* Elegant shadows */
+    --shadow-elegant: 0 10px 30px -10px hsl(var(--salmon) / 0.3);
+    --shadow-cultural: 0 20px 40px -15px hsl(var(--night) / 0.8);
+    --shadow-zen: 0 5px 20px -5px hsl(var(--zen-gold) / 0.2);
+
+    /* Smooth animations */
+    --transition-cultural: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+    --transition-zen: all 0.3s ease-out;
 
     --radius: 0.5rem;
 
