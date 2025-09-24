@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { BrandShowcase } from "@/components/BrandShowcase";
 import { Cherry, Palette, Sparkles } from "lucide-react";
+import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import sushiHero from "@/assets/sushi-hero.jpg";
 import sakuraZen from "@/assets/sakura-zen.jpg";
@@ -180,8 +181,10 @@ const Index = () => {
                   <Button variant="cultural" size="lg">
                     Fazer Pedido Agora
                   </Button>
-                  <Button variant="outline" size="lg">
-                    Conheça Nossa Loja
+                  <Button variant="outline" size="lg" asChild>
+                    <Link to="/sobre">
+                      Conheça Nossa Loja
+                    </Link>
                   </Button>
                 </div>
               </div>
