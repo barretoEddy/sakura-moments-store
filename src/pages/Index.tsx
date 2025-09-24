@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { BrandShowcase } from "@/components/BrandShowcase";
+import { Cherry, Palette, Sparkles } from "lucide-react";
+import Navigation from "@/components/Navigation";
 import sushiHero from "@/assets/sushi-hero.jpg";
 import sakuraZen from "@/assets/sakura-zen.jpg";
 import cultureElements from "@/assets/culture-elements.jpg";
@@ -18,25 +20,27 @@ const culturalElements = [
   {
     title: "Autenticidade Cultural",
     description: "Cada produto carrega a essência genuína da tradição japonesa, selecionado cuidadosamente para proporcionar uma experiência cultural autêntica.",
-    icon: "🌸"
+    icon: Cherry
   },
   {
     title: "Experiência Sobre Produto", 
     description: "Não vendemos apenas sushi e produtos orientais - oferecemos jornadas culturais que conectam você com a rica tradição japonesa.",
-    icon: "🎨"
+    icon: Palette
   },
   {
     title: "Momentos Memoráveis",
     description: "Cada visita é projetada para criar memórias duradouras, transformando uma refeição em uma celebração da cultura japonesa.",
-    icon: "✨"
+    icon: Sparkles
   }
 ];
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Navigation />
+      
       {/* Hero Section */}
-      <section className="relative overflow-hidden">
+      <section className="relative overflow-hidden pt-16">
         <div className="absolute inset-0 bg-gradient-to-b from-background via-background/95 to-background" />
         <div 
           className="absolute inset-0 bg-cover bg-center opacity-20"
@@ -150,7 +154,7 @@ const Index = () => {
                 <div key={index} className="group bg-card/30 backdrop-blur-sm border border-border rounded-xl p-8 hover:bg-card/50 transition-all duration-300 hover:scale-105">
                   <div className="space-y-6">
                     <div className="w-16 h-16 mx-auto bg-gradient-to-br from-salmon to-salmon-light rounded-full flex items-center justify-center shadow-lg group-hover:shadow-xl transition-shadow">
-                      <span className="text-2xl">{element.icon}</span>
+                      <element.icon className="w-8 h-8 text-pearl" />
                     </div>
                     <div className="text-center space-y-4">
                       <h3 className="text-xl font-semibold text-salmon">{element.title}</h3>
